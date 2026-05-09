@@ -1,0 +1,66 @@
+body {
+    background-image: url("../img/sfondoManuale.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 50pt 40pt 40pt 300pt;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50pt;
+    margin: 0pt 0pt 30pt 0pt;
+}
+
+h3 {
+    margin: unset;
+}
+
+hr {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+
+#testo {
+    font-size: 15pt;
+    text-align: justify;
+}
+
+#contenuto {
+    background-color: whitesmoke;
+    border-radius: 20pt;
+    padding: 20pt;
+}
+
+b {
+    color: blue;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+#login > button {
+    background-color: red;
+    border: unset;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 7pt;
+    width: 150pt;
+}
+
+#login > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+#login > button:hover {
+    background-color: rgb(230, 4, 4);
+}

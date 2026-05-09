@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>BlackJack - Accedi</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/validazione.js"></script>
+        <script>
+        
+            // AGGIUNGE EVENT LISTENER PER LA CHIAMATA DI login.php E PER MOSTRA/NASCONDI PASSWORD
+            function inizializza(){
+                const form = document.getElementById("form");
+
+                form.addEventListener("submit",(event) => {
+                    event.preventDefault();
+
+                    if(validaAccesso()){
+                        const credenziali = new FormData(form);
+
+                        fetch("php/login.php",{
+                            method: "POST",
+                            body: credenziali
+                        })
+                        .then(response => {
+                            if(!response.ok)
+                                throw new Error();
+                            return response.text();
+                        })
+                        .then(text => {
+                            if (text == true)
+                                window.location.href = "tavolo.php";
+                            else {
+                                const p = document.getElementById("messaggio");
+                                p.innerText = text;
+                            }
+                        })
+                        .catch(error => {
+                            const p = document.getElementById("messaggio");
+                            p.innerText = "Impossibile connettersi al server :/";
+                        });
+                    }  
+                })
+
+                const img = document.getElementById("tipoInput");
+                img.addEventListener("click",(event) => {
+                    
+                    const input = document.getElementsByName("password")[0];
+
+                    if(input.type == "password"){
+                        input.type = "text";
+                        img.setAttribute("src","img/shown.png");
+                    } else {
+                        input.type = "password";
+                        img.setAttribute("src","img/hidden.png");
+                    }
+                    event.preventDefault(); 
+                });
+            }
+
+        </script>
+    </head>
+
+    <body onload="inizializza()">
+
+        <div id="blackjack">BlackJack</div>
+
+        <div id="spazio"></div>
+
+        <div id="accedi">
+            <form id="form">
+
+                <input type="text" name="username" placeholder="Username">
+
+                <div id="sezione_password">
+                    <input type="password" name="password" placeholder="Password">
+                    <div><img id="tipoInput" alt="Mostra/nascondi password" src="img/hidden.png"></div>
+                </div>
+                
+                <p>Password dimenticata? Clicca <a href="pwdDimenticata.html">qui</a></p>
+
+                <div><hr></div>
+    
+                <button type="submit" value="invia">ACCEDI</button>
+
+                <p id="messaggio"><br></p>
+                <p>Non hai ancora un account? <a href="registrazione.html">Registrati</a></p>
+                <p id="manuale"><a href="manuale.html">MANUALE D'USO</a></p>
+            </form>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("../img/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40pt 0pt 0pt 0pt;
+}
+
+#blackjack {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 80pt;
+    font-weight: bold;
+    width: 40%;
+    height: 200pt;
+}
+
+#spazio {
+    width: 20%;
+    height: 80pt;
+}
+
+#accedi {
+    display: flex;
+    justify-content: right;
+    width: 35%;
+}
+
+#dimenticata,p {
+    margin: 0pt;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 15pt;
+    font-family: Helvetica, sans-serif;
+    gap: 10pt;
+    padding: 20pt;
+    width: 65%;
+}
+
+#blackjack, #accedi {
+    width: 30%;
+}
+
+input {
+    background-color: whitesmoke;
+    border: 1pt solid black;
+    border-radius: 7pt;
+    height: 27pt;
+    padding: 0pt 0pt 0pt 5pt;
+}
+
+input:focus {
+    outline: none;
+}
+
+hr {
+    margin: 10pt 0pt 10pt 0pt;
+}
+
+button {
+    background-color: red;
+    border: unset;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+    width: 100%;
+    height: 30pt;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(230, 4, 4);
+}
+
+#messaggio {
+    color: rgb(231, 0, 0);
+    font-size: 12pt;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+#manuale {
+    text-align: center;
+}
+
+#manuale > a{
+    text-decoration: none;
+}
+
+#sezione_password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1pt solid black;
+    border-radius: 7pt;
+    margin: 0pt;
+}
+
+#sezione_password > input {
+    border: unset;
+    width: 87%;
+}
+
+#sezione_password > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5pt;
+    color: black;
+    font-size: 3pt;
+    margin-left: 5pt;
+    padding: 0pt;
+    width: 13%;
+    height: 50%;
+}
+
+#sezione_password > div img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-right: 5pt;
+}

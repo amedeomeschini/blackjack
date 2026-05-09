@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>BlackJack - Cambio Password</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/pwdDimenticata.css">
+        <script src="js/validazione.js"></script>
+        <script src="js/pwdDimenticata.js"></script>
+    </head>
+    <body onload="inizializza()">
+
+        <div id="sezione_form">
+
+            <form id="form">
+                <p>Inserisci i dati richiesti:</p>
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Indirizzo email" name="email">
+                <select name="domanda">
+                    <option value="">Seleziona la domanda di sicurezza</option>
+                    <option value="1">Qual è il nome del tuo animale domestico?</option>
+                    <option value="2">Qual era il tuo soprannome da piccolo?</option>
+                    <option value="3">Qual è il tuo film preferito?</option>
+                </select>
+                <input type="text" name="risposta" placeholder="Risposta">
+
+                <hr>
+
+                <button type="submit">INVIA</button>
+                <p id="messaggio">&nbsp;</p>
+                <p>Torna al <a href="index.html">login</a></p>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

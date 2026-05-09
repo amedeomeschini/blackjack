@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/sfondoTavolo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 13pt;
+    height: 30pt;
+}
+
+a {
+    color: white;
+}
+
+#tabella {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+table {
+    background-color: rgba(0, 128, 0, 0.5);
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 30pt auto;
+    width: 55%;
+    max-height: 100%;
+}
+
+#indietro {
+    margin-left: 10pt;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2pt solid white;
+    text-align: center;
+    font-size: 16pt;
+    padding: 8pt;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+#titolo {
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bold;
+    margin: 20pt 0pt 0pt 0pt;
+}
+
+#p-1 {
+    background-color: rgba(253, 253, 0, 0.731);
+}
+
+#p-2 {
+    background-color: rgba(210, 208, 208, 0.607);
+}
+
+#p-3 {
+    background-color: rgba(247, 107, 42, 0.595);
+}

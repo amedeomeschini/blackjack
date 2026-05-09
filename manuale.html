@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>BlackJack - Tutorial</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/manuale.css">
+    </head>
+    <body>
+        <div id="contenuto">
+
+            <div id="titolo">
+                <h1>BlackJack</h1>
+            </div>
+
+            <div id="testo">
+
+                <h3>LOGIN, REGISTRAZIONE E RECUPERO PASSWORD</h3>
+                <p>
+                    Per giocare è necessario accedere al portale con le proprie credenziali. 
+                    Se non si dispone di un account, è sufficiente iscriversi dall'apposita sezione. 
+                    Se non si ricorda la password, è possibile ripristinarla 
+                    cliccando <b>Password dimenticata?</b>. Seguono le credenziali di un account di prova:
+                </p>
+                <p>
+                    Username: Utente<br>Password: Password1<br>
+                    Indirizzo e-mail: utente@gmail.com<br>
+                    Domanda: Qual è il tuo film preferito?<br>Risposta: 21
+                </p><hr>
+                    
+                <h3>COME GIOCARE</h3>
+                <p>
+                    La valuta del gioco sono i punti, con cui è possibile effettuare le puntate. 
+                    Al momento della registrazione, ne vengono assegnati 1000 come regalo 
+                    di benvenuto. 
+                </p>
+                <p>
+                    Cliccando <b>GIOCA</b>, viene avviato un timer di 30 secondi e vengono abilitate le 
+                    puntate. Cliccando <b>AVVIA ORA</b>, o al termine del timer, la partita ha inizio e 
+                    vengono distribuite due carte al giocatore e al banco. Una carta del banco è 
+                    inizialmente coperta. Le carte numerate valgono il loro valore nominale, mentre le 
+                    figure valgono 10. L'asso può valere 1 o 11 a seconda della situazione. 
+                    L'obiettivo del gioco è ottenere un totale superiore a quello del banco, senza 
+                    superare 21.
+                </p>
+                <p>
+                    Se il giocatore totalizza esattamente 21 (BlackJack), il turno viene passato in 
+                    automatico. Se invece si totalizza un numero inferiore, 
+                    si ha la possibilità di aumentarlo richiedendo ulteriori carte (pulsante <b>CARTA</b>), 
+                    oppure di confermare la mano (pulsante <b>STAI</b>). Se il giocatore 
+                    supera 21, “sballa” e perde la partita.
+                </p>   
+                    
+                <p>
+                    Passato il turno, vengono rivelati la carta coperta 
+                    e il totale del banco. Se il totale del banco è 
+                    superiore a quello del giocatore, il giocatore ha perso. Se il 
+                    totale del banco è inferiore o uguale a quello del giocatore, il 
+                    banco cercherà di superarlo richiedendo nuove carte fino a superare il 
+                    giocatore o raggiungere il 17. Se il banco 
+                    “sballa”, il giocatore vince la partita. Se il banco e il giocatore hanno lo stesso 
+                    totale, La partita finisce in parità.
+                </p>
+
+                <p>
+                    Se il giocatore vince la partita totalizzando 21, gli viene restituito un 
+                    importo pari alla puntata * 2.5. In tutti gli altri casi di vittoria, verrà restituita 
+                    la puntata * 2. In caso di pareggio la puntata viene restituita. In caso di sconfitta, 
+                    la puntata è persa.
+                </p><hr>  
+
+                <h3>RADDOPPIO</h3>
+                <p>   
+                    Se con le prime due carte il totale del giocatore è compreso tra 9 e 11 
+                    (inclusi), compare un terzo pulsante <b>x2</b> tra le opzioni. Con esso è  
+                    possibile raddoppiare la puntata e richiedere una singola carta aggiuntiva.
+                    Dopodiché il turno viene passato in automatico.
+                </p><hr>  
+                   
+                <h3>RICARICA PUNTI, CLASSIFICA E LOGOUT</h3>
+                <p>    
+                    Nell'header della schermata di gioco, oltre al totale dei punti di cui si dispone, 
+                    sono presenti tre pulsanti. <b>RICARICA</b> consente di giocare al minigioco “Memory”, con 
+                    con il quale è possibile vincere dei punti extra. Con <b>VEDI RANKING</b> 
+                    si accede alla classifica del portale. Cliccando su <b>LOGOUT</b> 
+                    si torna alla schermata di login.
+                </p>
+                
+            </div><br><br><br>
+
+            <div id="login">
+                <button onclick="window.location.href = 'index.html';">TORNA AL LOGIN</button>
+            </div>
+
+        </div>
+    </body>
+</html>

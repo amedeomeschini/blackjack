@@ -1,0 +1,342 @@
+body {    
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 30pt;
+}
+
+#benvenuto, #bottoni_header {
+    width: 50%;
+    padding: 0pt 10pt 0pt 10pt;
+}
+
+#bottoni_header > button {
+    height: 70%;
+    width: 11%;
+    font-size: 9pt;
+    padding: 1pt;
+}
+
+#bottoni_header > #logout {
+    height: 70%;
+    width: 6%;
+    font-size: 9pt;
+    padding: 1pt;
+}
+
+#bottoni_header > button > img {
+    transform: none;
+}
+
+#benvenuto {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#bottoni_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10pt;
+}
+
+#logout {
+    background-color: rgb(226, 1, 1);
+    border-radius: 5pt;
+    color: white;
+    font-weight: bold;
+    padding: 3pt;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: rgb(241, 1, 1);
+}
+
+#ricarica {
+    background-color: rgb(235, 3, 177);
+    border-radius: 5pt;
+    color: white;
+    font-weight: bold;
+    padding: 3pt;
+    cursor: pointer;
+}
+
+#ricarica:hover {
+    background-color: rgb(245, 24, 189);
+}
+
+#titolo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 130pt;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 33%;
+    height: 100%;
+}
+
+#top_1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width:50%;
+}
+
+#top_2 {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding-left: 30pt;
+    width:50%;
+}
+
+#avvia_ora {
+    font-weight: bold;
+    height: 60%;
+}
+
+#blackjack {
+    font-size: 50pt;
+    font-weight: bold;
+    font-family: Times, serif;
+    padding: 7pt;
+    margin: 0pt;
+}
+
+#spazio {
+    height: 30pt;
+}
+
+#mano_banco, #mano_giocatore{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#sezione_puntate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10pt;
+    height: 110pt;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 1pt solid white;
+    padding: 2pt;
+    margin: 2pt;
+    width: 90px;
+    height: 140px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+#bottone_ranking , a{
+    color: white;
+    font-size: 13pt;
+}
+
+.chip {
+    width: 50pt;
+    height: 50pt;
+    cursor: pointer;
+}
+
+#info_puntata {
+    color: white;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 5pt;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+@keyframes muoviCarta {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.carta img {
+    animation: muoviCarta 1s ease;
+}
+
+@keyframes girare {
+    from {
+        transform: scaleX(1) rotateY(0deg);
+    }
+    to {
+        transform: scaleX(-1) rotateY(180deg);
+    }
+}
+
+#retro {
+    animation: girare 0.2s ease;
+    transform-style: preserve-3d;
+    image-rendering: crisp-edges;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0pt;
+}
+
+.messaggio {
+    color: yellow;
+    font-size: 35pt;
+    font-weight: bold;
+    position: fixed;
+    top: 48.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    filter: drop-shadow(5px 3px 5px rgba(0, 0, 0, 0.3));
+    width: 100%;
+}
+
+.perdita {
+    background-color: rgba(255, 0, 0, 0.787);
+    color: white;
+    position: fixed;
+    font-size: 80pt;
+    font-weight: bold;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));
+    padding: 5pt;
+    width: 100%;
+}
+
+.pareggio {
+    background-color: rgba(122, 122, 122, 0.787);
+    color: white;
+    position: fixed;
+    font-size: 80pt;
+    font-weight: bold;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));
+    padding: 5pt;
+    width: 100%;
+}
+
+.vittoria {
+    background-color: rgba(16, 150, 9, 0.787);
+    color: white;
+    position: fixed;
+    font-size: 80pt;
+    font-weight: bold;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));
+    padding: 5pt;
+    width: 100%;
+}
+
+#gioca {
+    background-color: red;
+    border-radius: 100pt;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 45pt;
+    height: 45pt;
+    cursor: pointer;
+}
+
+#gioca:hover {
+    background-color: rgb(255, 36, 12);
+    filter: drop-shadow(0px 0px 8px rgba(215, 0, 0, 0.87));
+}
+
+.bottoni_giocate {
+    border-radius: 100pt;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 45pt;
+    height: 45pt;
+    cursor: pointer;
+}
+
+#bottone_carta {
+    background-color: rgb(4, 181, 4);
+}
+
+#bottone_carta:hover {
+    background-color: rgb(32, 208, 32);
+    filter: drop-shadow(0px 0px 8px rgba(27, 196, 8, 0.87));
+}
+
+#bottone_stai {
+    background-color: rgb(0, 81, 255); 
+}
+
+#bottone_stai:hover {
+    background-color: rgb(0, 115, 255); 
+    filter: drop-shadow(0px 0px 8px rgb(110, 195, 255));
+}
+
+#bottone_raddoppia {
+    background-color: rgb(234, 7, 219); 
+}
+
+#bottone_raddoppia:hover {
+    background-color: rgb(252, 36, 238); 
+    filter: drop-shadow(0px 0px 8px rgb(248, 87, 229));
+}
+
+#tot_0,#tot_1 {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 35pt;
+}
+
+#logout > img {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20pt;
+    
+    background-image: url(../img/sfondoRicarica.png);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 30pt;
+}
+
+#indietro {
+    color: white;
+    font-size: 13pt;
+    padding-left: 10pt;
+}
+
+#titolo {
+    color: white;
+    font-size: 40pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0pt;
+}
+
+#memory {
+    padding: 0pt;
+    margin: 0pt;
+    filter: drop-shadow(5px 3px 5px rgba(0, 0, 0, 0.4));
+}
+
+#avvia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20pt;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+td {
+    border: 7pt solid whitesmoke;
+    width: 80pt;
+    height: 80pt;
+}
+
+img {
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+a {
+    color: white;
+}
+
+#timer {
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0pt;
+}
+
+button {
+    background-color: rgba(158,96,225);
+    border: none;
+    box-shadow: 0 0 2px black;
+    border-radius: 8pt;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 5pt;
+    width: 70pt;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(238, 63, 182);
+}
