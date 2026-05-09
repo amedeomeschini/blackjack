@@ -37,14 +37,121 @@ Il progetto segue l'architettura classica delle applicazioni web dinamiche:
 
 ## 📂 Struttura del Progetto
 
-* `index.html`: Entry point (pagina di login).
-* `tavolo.php`: Interfaccia principale del tavolo da gioco.
-* `js/`: 
-    * `tavolo.js`: Core engine del gioco (distribuzione, turni, calcolo risultati).
-    * `validazione.js`: Validazione form di input.
-    * `ricaricaPunti.js`: Logica del minigioco Memory.
-* `php/`: Script per l'integrazione con il database e la gestione sessioni.
-* `manuale.html`: Documentazione utente e regole del gioco.
+* `pwdDimenticata.html`
+  * `manuale.html`
+  * `index.html`
+  * `registrazione.html`
+  * `EsportaDB.sh`
+  * `README.md`
+  * `tavolo.php`
+  * `classifica.php`
+  * `ricaricaPunti.php`
+  * `css/`:
+    * `pwdDimenticata.css`
+    * `ranking.css`
+    * `login.css`
+    * `manuale.css`
+    * `registrazione.css`
+    * `tavolo.css`
+    * `ricaricaPunti.css`
+  * `js/`:
+    * `pwdDimenticata.js`
+    * `tavolo.js`
+    * `ricaricaPunti.js`
+    * `validazione.js`
+  * `php/`:
+    * `login.php`
+    * `register.php`
+    * `logout.php`
+    * `pwdDimenticata.php`
+    * `config.php`
+    * `costruisciClassifica.php`
+    * `aggiornaPunteggio.php`
+    * `cambiaPwd.php`
+    * `ottieniPunti.php`
+  * `img/`:
+    * `sfondoRicarica.png`
+    * `login.jpg`
+    * `sfondoBlackJack.png`
+    * `shown.png`
+    * `sfondoTavolo.jpg`
+    * `log_out.png`
+    * `hidden.png`
+    * `sfondoRecupero.png`
+    * `sfondoManuale.png`
+    * `carte/`:
+      * `9-P.png`
+      * `9-F.png`
+      * `9-Q.png`
+      * `jack-C.png`
+      * `donna-Q.png`
+      * `donna-F.png`
+      * `donna-P.png`
+      * `jack-F.png`
+      * `jack-Q.png`
+      * `donna-C.png`
+      * `jack-P.png`
+      * `retro.png`
+      * `9-C.png`
+      * `re-Q.png`
+      * `re-F.png`
+      * `10-C.png`
+      * `re-P.png`
+      * `8-P.png`
+      * `8-F.png`
+      * `8-Q.png`
+      * `8-C.png`
+      * `re-C.png`
+      * `10-P.png`
+      * `10-F.png`
+      * `10-Q.png`
+      * `2-F.png`
+      * `2-Q.png`
+      * `2-P.png`
+      * `6-C.png`
+      * `4-C.png`
+      * `4-Q.png`
+      * `4-F.png`
+      * `4-P.png`
+      * `6-P.png`
+      * `2-C.png`
+      * `6-F.png`
+      * `6-Q.png`
+      * `1-P.png`
+      * `5-C.png`
+      * `1-Q.png`
+      * `1-F.png`
+      * `3-F.png`
+      * `3-Q.png`
+      * `7-C.png`
+      * `3-P.png`
+      * `3-C.png`
+      * `7-P.png`
+      * `7-F.png`
+      * `7-Q.png`
+      * `5-Q.png`
+      * `5-F.png`
+      * `5-P.png`
+      * `1-C.png`
+    * `memory/`:
+      * `x.png`
+      * `4.png`
+      * `5.png`
+      * `6.png`
+      * `2.png`
+      * `3.png`
+      * `1.png`
+      * `0.png`
+    * `chip/`:
+      * `chip_10.png`
+      * `annulla.png`
+      * `all_in.png`
+      * `chip_50.png`
+      * `chip_1000.png`
+      * `chip_100.png`
+      * `chip_500.png`
+  * `sql/`:
+    * `meschini_635172.sql`
 
 ---
 
