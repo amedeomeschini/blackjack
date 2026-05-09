@@ -161,6 +161,6 @@ Il progetto segue l'architettura classica delle applicazioni web dinamiche:
 2. Importare il database tramite l'interfaccia dedicata (es. phpMyAdmin).
 3. Configurare le credenziali di connessione nel file PHP dedicato.
 
-### Account di Prova (Università)
+### Account di Prova
 * **Username:** Utente
 * **Password:** Password1
